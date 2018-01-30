@@ -1,0 +1,11 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+data_index:
+    defaults: { _controller: AppBundle:Data:index }
+    path: /data/
+
+data_data:
+    defaults: { _controller: AppBundle:Data:data }
+    path: /data/{matrix}/{submatrix}/{parameter}
