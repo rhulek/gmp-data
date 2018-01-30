@@ -11,14 +11,35 @@ namespace AppBundle\dto;
 class DatasetDTO
 {
 
+    /**
+     * @var string
+     */
     private $fileIdentifier;
 
+    /**
+     * @var LanguageDTO
+     */
     private $language;
 
+    /**
+     * @var string
+     */
     private $characterSet;
 
+    /**
+     * @var string
+     */
     private $hierarchyLevel;
 
+    /**
+     * @var string
+     */
+    private $metadataStandardName;
+
+    /**
+     * @var string
+     */
+    private $metadataStandardVersion;
 
 
     /**
@@ -70,6 +91,102 @@ class DatasetDTO
      * @var ResponsiblePartyDTO
      */
     private $resposibleParty;
+
+    /**
+     * @return string
+     */
+    public function getFileIdentifier()
+    {
+        return $this->fileIdentifier;
+    }
+
+    /**
+     * @param string $fileIdentifier
+     */
+    public function setFileIdentifier($fileIdentifier)
+    {
+        $this->fileIdentifier = $fileIdentifier;
+    }
+
+    /**
+     * @return LanguageDTO
+     */
+    public function getLanguage()
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param LanguageDTO $language
+     */
+    public function setLanguage($language)
+    {
+        $this->language = $language;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCharacterSet()
+    {
+        return $this->characterSet;
+    }
+
+    /**
+     * @param string $characterSet
+     */
+    public function setCharacterSet($characterSet)
+    {
+        $this->characterSet = $characterSet;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHierarchyLevel()
+    {
+        return $this->hierarchyLevel;
+    }
+
+    /**
+     * @param string $hierarchyLevel
+     */
+    public function setHierarchyLevel($hierarchyLevel)
+    {
+        $this->hierarchyLevel = $hierarchyLevel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetadataStandardName()
+    {
+        return $this->metadataStandardName;
+    }
+
+    /**
+     * @param string $metadataStandardName
+     */
+    public function setMetadataStandardName($metadataStandardName)
+    {
+        $this->metadataStandardName = $metadataStandardName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetadataStandardVersion()
+    {
+        return $this->metadataStandardVersion;
+    }
+
+    /**
+     * @param string $metadataStandardVersion
+     */
+    public function setMetadataStandardVersion($metadataStandardVersion)
+    {
+        $this->metadataStandardVersion = $metadataStandardVersion;
+    }
 
     /**
      * @return MetaMetaDTO
